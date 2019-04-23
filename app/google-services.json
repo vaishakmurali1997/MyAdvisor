@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "862374398622",
+    "firebase_url": "https://my-advisor-2f665.firebaseio.com",
+    "project_id": "my-advisor-2f665",
+    "storage_bucket": "my-advisor-2f665.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862374398622:android:6488a5fed66fc82d",
+        "android_client_info": {
+          "package_name": "in.grdtech.myadvisor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862374398622-tsrnoptpcpi50ovu15h759bk9ro6ucul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.grdtech.myadvisor",
+            "certificate_hash": "909f1b633497bddbd1a6cb8536bf273d06427c96"
+          }
+        },
+        {
+          "client_id": "862374398622-g340051vqgo0bjm6qc6jjlif1c7asrtk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBrk5wT1kuEhuLArGm98iO0Z1WC3vBya2U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "862374398622-g340051vqgo0bjm6qc6jjlif1c7asrtk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

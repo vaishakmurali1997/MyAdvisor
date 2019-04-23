@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.grdtech.myadvisor.ChatActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_material_light"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/userIcon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_launcher_background"
+            android:foregroundGravity="center"/>
+
+        <TextView
+            android:id="@+id/usernameTxt"
+            android:layout_width="141dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/userIcon"
+            android:layout_alignTop="@+id/userIcon"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userIcon"
+            android:layout_weight="0"
+            android:gravity="center_vertical"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            tools:text="Username"/>
+
+        <Button
+            android:id="@+id/seeProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:text="See Profile"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messagesList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header"
+        android:padding="5dp"
+        tools:listitem="@android:layout/two_line_list_item"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/footer">
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:id="@+id/imageBtn"
+            android:background="@android:drawable/ic_menu_gallery" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageTxt"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:inputType="textShortMessage|textAutoCorrect" />
+
+        <Button
+            android:id="@+id/sendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@null"
+            android:text="Send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
